@@ -1,0 +1,6 @@
+build/
+.vscode/
+*.exe
+*_output.txt
+*.o
+*.pdb
