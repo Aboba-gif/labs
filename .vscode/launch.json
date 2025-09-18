@@ -38,7 +38,7 @@
             "preLaunchTask": "CMake: Build All Labs (Debug)"
         },
         {
-            "name": "(gdb) Launch Lab 3: Heat Equation",
+            "name": "(gdb) Launch Lab 3: Matrix Multiplication",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/labs/lab_02_heat_equation/lab_03.exe",
