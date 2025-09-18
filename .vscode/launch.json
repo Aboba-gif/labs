@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch Lab 1: Integration", // Имя, которое вы видите в выпадающем меню отладки
+            "type": "cppdbg",                        // Говорит VS Code: "Используй расширение для отладки C++"
+            "request": "launch",                     // Мы хотим "запустить" новую программу
+
+            // САМОЕ ВАЖНОЕ:
+            "program": "${workspaceFolder}/build/labs/lab_01_integration/lab_01.exe", // Путь к .exe файлу, который нужно запустить
+
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "sourceFileMap": {
+                "C:/GitProject/labs": "${workspaceFolder}"
+            },
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe", // Убедитесь, что путь верный
+
+            // ВОЛШЕБНАЯ СВЯЗЬ:
+            "preLaunchTask": "CMake: Build All Labs (Debug)" // "Перед тем как запустить программу, выполни задачу с этим именем из tasks.json!"
+        },
+        {
+            "name": "(gdb) Launch Lab 2: Heat Equation",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/labs/lab_02_heat_equation/lab_02.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "sourceFileMap": {
+                 // Здесь ваш правильный путь из прошлой отладки, например:
+                "C:/GitProject/labs": "${workspaceFolder}"
+            },
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe",
+            "preLaunchTask": "CMake: Build All Labs (Debug)"
+        }
+        // Здесь можно добавить конфигурацию для MSVC, если нужно
+    ]
+}

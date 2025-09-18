@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "mingw-debug",
+            "displayName": "MinGW GCC (Debug)",
+            "description": "Сборка для MinGW GCC с отладочной информацией",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_CXX_COMPILER": "C:/msys64/ucrt64/bin/g++.exe"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "default",
+            "configurePreset": "mingw-debug",
+            "displayName": "Сборка (Debug)"
+        }
+    ]
+}
