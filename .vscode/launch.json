@@ -41,7 +41,7 @@
             "name": "(gdb) Launch Lab 3: Matrix Multiplication",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/labs/lab_02_heat_equation/lab_03.exe",
+            "program": "${workspaceFolder}/build/labs/lab_03_matrix_multiplication/lab_03.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
