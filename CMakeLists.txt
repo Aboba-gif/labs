@@ -15,3 +15,4 @@ add_subdirectory(common)
 # === Секция 2: Подключаем чертежи лабораторных ===
 add_subdirectory(labs/lab_01_integration)
 add_subdirectory(labs/lab_02_heat_equation)
+add_subdirectory(labs/lab_03_matrix_multiplication)

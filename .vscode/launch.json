@@ -36,6 +36,22 @@
             "MIMode": "gdb",
             "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe",
             "preLaunchTask": "CMake: Build All Labs (Debug)"
+        },
+        {
+            "name": "(gdb) Launch Lab 2: Heat Equation",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/labs/lab_02_heat_equation/lab_03.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "sourceFileMap": {
+                 // Здесь ваш правильный путь из прошлой отладки, например:
+                "C:/GitProject/labs": "${workspaceFolder}"
+            },
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe",
+            "preLaunchTask": "CMake: Build All Labs (Debug)"
         }
         // Здесь можно добавить конфигурацию для MSVC, если нужно
     ]
